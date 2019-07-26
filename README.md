@@ -1,2 +1,3 @@
-# gradle-plugins
-Assortment of various gradle plugins that I find useful.
+#Brian's Gradle Plugins and Associated Libraries
+
+That's it.

@@ -4,8 +4,7 @@ plugins {
 }
 
 allprojects {
-    group = "io.smart-life"
-    version = "1.0"
+    group = "org.brianbrown"
 
     repositories {
         jcenter()

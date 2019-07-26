@@ -1,3 +1,3 @@
 rootProject.name = "gradle-plugins"
 
-include("module-structure-dsl")
+include("project-structure")
