@@ -3,21 +3,9 @@ plugins {
     `maven-publish`
 }
 
+group = "org.brianbrown"
 version = "0.0.1"
 
-gradlePlugin {
-    plugins {
-        create("module-generator") {
-            group = "org.brianbrown"
-            id = "module-generator"
-            version = "0.0.1"
-            implementationClass = "ModuleGeneratorPlugin"
-        }
-    }
-}
-
-publishing {
-    repositories {
-        mavenLocal()
-    }
-}
+project.projectDir
+        .listFiles { _, name -> name.matches(Regex("(?!settings)^([a-z\\.]+)(\\.gradle{1})(\\.kts{0,1})?")) }
+        .forEach { apply(from = it.name) }

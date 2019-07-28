@@ -1,4 +1,5 @@
 import org.gradle.api.artifacts.Configuration;
+import org.gradle.api.artifacts.ConfigurationContainer;
 import org.gradle.api.component.ComponentWithVariants;
 import org.gradle.api.model.ObjectFactory;
 import org.gradle.api.provider.Property;

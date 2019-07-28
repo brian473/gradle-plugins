@@ -1,3 +1,4 @@
+import org.gradle.api.artifacts.ConfigurablePublishArtifact;
 import org.gradle.api.artifacts.Configuration;
 import org.gradle.api.component.Artifact;
 import org.gradle.api.component.SoftwareComponent;
@@ -5,7 +6,7 @@ import org.gradle.api.model.ObjectFactory;
 import org.gradle.api.provider.Property;
 import org.jetbrains.annotations.NotNull;
 
-public class DomainArtifact implements SoftwareComponent, Artifact {
+public class DomainArtifact implements SoftwareComponent {
     private final String name;
     private final Property<Configuration> configuration;
 
