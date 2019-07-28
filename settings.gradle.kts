@@ -1,3 +1,11 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        mavenLocal()
+    }
+}
+
 rootProject.name = "gradle-plugins"
 
-include("project-structure")
+include("module-generator")
